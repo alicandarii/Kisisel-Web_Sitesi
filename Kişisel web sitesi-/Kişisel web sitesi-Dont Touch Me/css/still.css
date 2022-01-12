@@ -1,0 +1,32 @@
+.slider-all{
+    width:700px;
+    height:400px;
+    margin: 30px;
+    position: relative;
+    overflow: hidden;
+    border: 10px solid=black;
+}
+.res1{position: absolute;left: 0px;}
+.res2{position: absolute;left: 700px;}
+
+.slider{
+    width: 2800px;
+    height: 400px;
+    position: absolute;
+    left: 0px;
+    
+    -webkit-animation-name:sliders;
+    -webkit-animation-duration:3s;
+    -webkit-animation-iteration-count:infinite;
+    
+}
+.slider:hover{-webkit-animation-play-state:paused;}
+
+@-webkit-keyframes sliders{
+    0%{left:0px}
+    10%{left:0px;}
+    20%{left:-700px;}
+    30%{left:-700px;}
+    40%{left:-700px;}
+    
+}
